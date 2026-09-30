@@ -32,13 +32,20 @@ https://github.com/user-attachments/assets/bcb3208a-0b8c-47d5-83fb-ebb6dc2d734f
 ## Run it
 
 Needs Python 3.11 to 3.13 and a Skyvern API key (the free tier works).
+
+```
 pip install "skyvern[local]"
 export SKYVERN_API_KEY=your_key
 python workday_skyvern.py "https://quickbase.wd504.myworkdayjobs.com/External" "Quickbase" analyst
+```
 
 It prints a live-view link, the count check result, then one line per posting.
+
 To test the count check and retry logic offline (no account or credits needed):
+
+```
 python test_workday_skyvern.py
+```
 
 ## What I learned
 
